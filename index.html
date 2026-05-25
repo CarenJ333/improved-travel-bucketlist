@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trip Trail — Your Travel Bucket List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      :root {
+        --sand: #F5F0E8;
+        --sand-dark: #EDE6D6;
+        --ink: #1A1714;
+        --ink-muted: #5A5650;
+        --ink-faint: #9A948E;
+        --terracotta: #C4512A;
+        --terracotta-light: #F0D4C4;
+        --forest: #2D5A3D;
+        --forest-light: #C8DDD0;
+        --sky: #3A6FA6;
+        --sky-light: #C8D8EC;
+        --gold: #B8860B;
+        --gold-light: #F0E4B8;
+        --white: #FFFFFF;
+        --radius-sm: 6px;
+        --radius-md: 12px;
+        --radius-lg: 20px;
+        --radius-xl: 32px;
+        --font-display: 'Playfair Display', serif;
+        --font-body: 'DM Sans', sans-serif;
+        --shadow-card: 0 2px 12px rgba(26,23,20,0.08), 0 1px 3px rgba(26,23,20,0.05);
+        --shadow-hover: 0 8px 32px rgba(26,23,20,0.14), 0 2px 8px rgba(26,23,20,0.08);
+        --transition: 0.2s cubic-bezier(0.4,0,0.2,1);
+      }
+      body {
+        font-family: var(--font-body);
+        background: var(--sand);
+        color: var(--ink);
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+      #root { min-height: 100vh; }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: var(--sand-dark); }
+      ::-webkit-scrollbar-thumb { background: var(--ink-faint); border-radius: 3px; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
